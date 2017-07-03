@@ -8,6 +8,7 @@
 # Code Challenge Summary
  
 Challenge: Given a log of all transactions at an e-commerce company with a social network, determine if a given transaction is anomalously high within a user's friend network. 
+See <https://github.com/InsightDataScience/anomaly_detection> for full description and requirements of code challenge.
  
 A user's network is defined by a degrees of connection parameter, D. 
 D=1 considers only direct friends of a user as that user's network.
