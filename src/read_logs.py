@@ -1,4 +1,5 @@
 import json
+import sys
 from collections import OrderedDict
 import os
 import time, datetime
@@ -126,9 +127,8 @@ def FindAnomaly(json_dict, users, T=False):
 
 
 ### INITIALIZE PARAMETERS
-batch_file_path = '/home/tahlia/Documents/Insight/anomaly_demaio/log_input/batch_log.json'
-stream_file_path = '/home/tahlia/Documents/Insight/anomaly_demaio/log_input/stream_log.json'
-n=10000
+batch_file_path = sys.argv[1]
+stream_file_path = sys.argv[2]
 
 start = time.time()
 #DEFINE USERS FROM BATCH LOG

@@ -9,7 +9,6 @@ class Person(object):
 
   def __init__(self, unique_id, friends=None, purchase_info=None):
     self.unique_id = unique_id
-    #self.name = name
     if friends:
       self.friends = friends
     else:
@@ -29,11 +28,7 @@ class Person(object):
   def GetPurchases(self):
     return self.purchases
 
-  #def GetName(self):
-  #  return self.Name
-
   def AddPurchase(self, purchase_info):
-    #self.purchases[purchase_info['timestamp']]={'amount':purchase_info['amount']}
     self.purchases[self.npurchase]={'amount':purchase_info['amount'], 'timestamp':purchase_info['timestamp']}
     self.npurchase += 1
     return

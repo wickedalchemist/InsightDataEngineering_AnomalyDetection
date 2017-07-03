@@ -126,14 +126,13 @@ def FindAnomaly(json_dict, users, T=False):
     return np.nan, np.nan, np.nan
 
 
-### INITIALIZE PARAMETERS
-batch_file_path = '/home/tahlia/Documents/Insight/anomaly_demaio/log_input/batch_log.json'
-stream_file_path = '/home/tahlia/Documents/Insight/anomaly_demaio/log_input/stream_log.json'
-
+##### INITIALIZE PARAMETERS
 batch_file_path = sys.argv[1]
 stream_file_path = sys.argv[2]
 
 start = time.time()
+#####
+
 #DEFINE USERS FROM BATCH LOG
 users = DefUsers(batch_file_path)
 #print "HAVE IDENTIFIED ALL USERS"
